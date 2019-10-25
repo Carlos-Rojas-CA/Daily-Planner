@@ -18,7 +18,7 @@ var myDay = {
     time: ["9AM", '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM'],
     appointment: ['', '', '', '', '', '', '', '', ''],
 };
-
+ 
 var old = JSON.parse(window.localStorage.getItem("Planner"))
 if(myDay.date === old.date){
     myDay = old;
