@@ -20,7 +20,7 @@ var myDay = {
 };
 
  if(window.localStorage.getItem('planner') === 'null'){
-    window.localStorage.setItem('planner', JSON.stringify(myDay))
+    window.localStorage.setItem('planner', myDay)
     
 }
 var old = JSON.parse(window.localStorage.getItem("Planner"))
