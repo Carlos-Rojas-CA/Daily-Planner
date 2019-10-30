@@ -18,8 +18,15 @@ var myDay = {
     time: ["9AM", '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM'],
     appointment: ['', '', '', '', '', '', '', '', ''],
 };
- 
+
+ if(window.localStorage.getItem('planner') === 'null'){
+    window.localStorage.setItem('planner', JSON.stringify(myDay))
+    
+}
 var old = JSON.parse(window.localStorage.getItem("Planner"))
+ console.log(old.date)
+
+
 if(myDay.date === old.date){
     myDay = old;
 }
