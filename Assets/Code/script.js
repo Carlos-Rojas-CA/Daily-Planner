@@ -19,7 +19,7 @@ var myDay = {
     appointment: ['', '', '', '', '', '', '', '', ''],
 };
 
- if(window.localStorage.getItem('Planner') === 'null'){
+ if(window.localStorage.getItem('Planner') === null){
     window.localStorage.setItem('Planner', JSON.stringify(myDay))
     
 }
